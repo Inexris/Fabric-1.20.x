@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "inexrismod",
+	"version": "${version}",
+	"name": "Inexris Mod",
+	"description": "First Mod By Inexris!",
+	"authors": [
+		"Inexris"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/inexrismod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dilum.inexrismod.InexrisMod"
+		],
+		"client": [
+			"com.dilum.inexrismod.InexrisModClient"
+		],
+		"fabric-datagen": [
+			"com.dilum.inexrismod.InexrisModDataGenerator"
+		]
+	},
+	"mixins": [
+		"inexrismod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
